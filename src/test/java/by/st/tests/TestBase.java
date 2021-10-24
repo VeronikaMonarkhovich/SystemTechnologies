@@ -2,14 +2,17 @@ package by.st.tests;
 
 import by.st.helpers.Attach;
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.WebDriverRunner;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class TestBase {
-    @BeforeAll
-    static void setup() {
+    @BeforeEach
+    void setup() {
         Configuration.startMaximized = true;
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
@@ -29,6 +32,8 @@ public class TestBase {
         Attach.pageSource();
         Attach.browserConsoleLogs();
         Attach.addVideo();
+        WebDriverRunner.getWebDriver().close();
+        WebDriverRunner.getWebDriver().quit();
     }
 }
 
