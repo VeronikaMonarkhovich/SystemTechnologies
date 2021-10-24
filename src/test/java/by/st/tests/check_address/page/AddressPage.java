@@ -23,7 +23,7 @@ public class AddressPage {
         open(App.config.webUrl());
     }
 
-    @Step("Проверяем адресс компании")
+    @Step("Проверяем адрес компании")
     public void checkAddress() {
         $(".address").find(".icon_box").shouldHave(text("ул. Академика Купревича, 3"));
     }

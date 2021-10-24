@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.$$;
 public class SearchResultPage {
     @Step("Проверка результатов поиска ")
     public void checkResults(String searchQuery) {
-         ElementsCollection results = $$(".secondary_content_col");
+         ElementsCollection results = $$(".search_el");
 
             results.shouldBe(CollectionCondition.sizeGreaterThan(0))
                     .get(1)
