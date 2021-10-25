@@ -23,7 +23,7 @@ public class TestBase {
         capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
 
         Configuration.browserCapabilities = capabilities;
-        Configuration.remote = "http://localhost:4444/wd/hub/";
+        // Configuration.remote = "http://localhost:4444/wd/hub/";
     }
 
     @AfterEach
@@ -36,5 +36,4 @@ public class TestBase {
         WebDriverRunner.getWebDriver().quit();
     }
 }
-
 
