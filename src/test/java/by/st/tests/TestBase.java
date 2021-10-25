@@ -1,5 +1,6 @@
 package by.st.tests;
 
+import by.st.config.App;
 import by.st.helpers.Attach;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
@@ -23,7 +24,7 @@ public class TestBase {
         capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
 
         Configuration.browserCapabilities = capabilities;
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/";
+        Configuration.remote = App.config.remoteUrl();
     }
 
     @AfterEach
