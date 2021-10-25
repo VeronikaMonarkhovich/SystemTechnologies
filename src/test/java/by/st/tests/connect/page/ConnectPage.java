@@ -11,6 +11,9 @@ public class ConnectPage {
     @Step("Открываем страницу входа")
     public void openMainPage() {
         open(App.config.webUrl());
+        if(!$(".top_menu_item.current").getText().equals("Рус")){
+            $(byText("Рус")).click();
+        }
     }
 
     @Step("Нажимаем на 'Связаться с нами'")

@@ -11,6 +11,9 @@ public class LanguagePage {
     @Step("Открываем страницу входа")
     public void openMainPage() {
         Selenide.open(App.config.webUrl());
+        if(!$(".top_menu_item.current").getText().equals("Рус")){
+            $(byText("Рус")).click();
+        }
     }
 
     @Step("Нажимаем на кнопку eng")
