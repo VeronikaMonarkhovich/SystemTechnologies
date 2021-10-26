@@ -18,12 +18,22 @@ ___
 
 <img src="images/jenkins.jpg" width="800" height="600"> 
 
+Создаем config.properties:
+
+```bash
+./src/test/resources/config/config.properties
+```
+Text File Content:
+```bash
+webUrl=https://www.st.by
+remoteUrl = REMOTE_DRIVER_URL
+```
 Запуск тестов:
 - в параметре DremoteDriverUrl - указываем логин, пароль и адрес удаленного сервера, где будут проходить тесты
 - в параметре DvideoStorage указываем место для сохранения видео
 - в параметре Dbrowser задаем браузер
 ```bash
-gradle clean test-Dbrowser=${BROWSER}-DremoteDriverUrl=https://%s:%s@selenoid.autotests.cloud/wd/hub/ -DvideoStorage=https://selenoid.autotests.cloud/video/ 
+gradle clean test -Dbrowser=${BROWSER}  -DremoteDriverUrl=${REMOTE_DRIVER_URL} -DvideoStorage=https://selenoid.autotests.cloud/video/
 ```
 
 Генерация отчета:
