@@ -11,6 +11,7 @@ ___
 
 ## <img src="images/ato1.jpg" width="20" height="20"> Проект создан в Allure TestOps
 <img src="images/ato.jpg" width="800" height="600"> 
+
 ___
 
 ## :person_in_tuxedo: Запуск тестов происходит в CI [Jenkins](https://jenkins.autotests.cloud/job/08-Veronika_Monarkhovich-System_technologies/)
