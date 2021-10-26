@@ -39,4 +39,4 @@ target/
 .vscode
 /gradlew
 /gradlew.bat
-/config.properties
+config.properties
