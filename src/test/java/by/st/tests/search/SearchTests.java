@@ -12,7 +12,7 @@ public class SearchTests extends TestBase {
 
     @ValueSource(strings = {
             "банк",
-            "вакансии",
+            "платформа",
             "программа"
     })
 
