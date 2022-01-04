@@ -1,8 +1,8 @@
-package by.st.tests.company;
+package by.st.tests.ui.tests.company;
 
-import by.st.tests.TestBase;
-import by.st.tests.company.page.CompanyPage;
-import by.st.tests.company.page.CompanyResultPage;
+import by.st.tests.ui.tests.TestBase;
+import by.st.tests.ui.tests.company.page.CompanyPage;
+import by.st.tests.ui.tests.company.page.CompanyResultPage;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

@@ -1,4 +1,4 @@
-package by.st.tests.connect.page;
+package by.st.tests.ui.tests.connect.page;
 
 import io.qameta.allure.Step;
 

@@ -1,7 +1,8 @@
-package by.st.tests;
+package by.st.tests.ui.tests;
 
-import by.st.config.App;
-import by.st.helpers.Attach;
+import by.st.tests.ui.helpers.Attach;
+import by.st.tests.ui.config.App;
+
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
 import org.junit.jupiter.api.AfterEach;

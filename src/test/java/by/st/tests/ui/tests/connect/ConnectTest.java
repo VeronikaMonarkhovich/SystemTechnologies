@@ -1,8 +1,8 @@
-package by.st.tests.connect;
+package by.st.tests.ui.tests.connect;
 
-import by.st.tests.TestBase;
-import by.st.tests.connect.page.ConnectPage;
-import by.st.tests.connect.page.ConnectResultsPage;
+import by.st.tests.ui.tests.TestBase;
+import by.st.tests.ui.tests.connect.page.ConnectPage;
+import by.st.tests.ui.tests.connect.page.ConnectResultsPage;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

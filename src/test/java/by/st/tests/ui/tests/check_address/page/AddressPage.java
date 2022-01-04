@@ -1,13 +1,11 @@
-package by.st.tests.check_address.page;
+package by.st.tests.ui.tests.check_address.page;
 
-import by.st.config.App;
-import com.codeborne.selenide.Condition;
+import by.st.tests.ui.config.App;
 import com.codeborne.selenide.Configuration;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.BeforeAll;
 
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selectors.byName;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 

@@ -1,4 +1,4 @@
-package by.st.tests.search.page;
+package by.st.tests.ui.tests.search.page;
 
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.ElementsCollection;

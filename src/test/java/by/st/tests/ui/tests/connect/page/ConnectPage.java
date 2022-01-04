@@ -1,6 +1,6 @@
-package by.st.tests.connect.page;
+package by.st.tests.ui.tests.connect.page;
 
-import by.st.config.App;
+import by.st.tests.ui.config.App;
 import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Selectors.byText;

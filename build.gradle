@@ -8,7 +8,7 @@ repositories {
 }
 
 def allureVersion = '2.16.1',
-    selenideVersion = '6.1.1',
+    selenideVersion = '6.1.2',
     junitVersion = '5.8.2'
 
 allure {
@@ -23,9 +23,10 @@ allure {
 
 dependencies {
     testImplementation(
-            'org.aspectj:aspectjweaver:1.9.7',
+            'org.aspectj:aspectjweaver:1.9.6',
             "com.codeborne:selenide:$selenideVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
+            'org.assertj:assertj-core:3.21.0',
             "org.aeonbits.owner:owner:1.0.12",
             "org.junit.jupiter:junit-jupiter:$junitVersion")
     testRuntimeOnly(
@@ -35,7 +36,10 @@ dependencies {
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
 }
+
 
 tasks.withType(Test) {
     systemProperties(System.getProperties())
@@ -43,6 +47,7 @@ tasks.withType(Test) {
 
     testLogging {
         lifecycle {
+//            events "started", "failed"
             events "started", "skipped", "failed", "standard_error", "standard_out"
             exceptionFormat "short"
         }

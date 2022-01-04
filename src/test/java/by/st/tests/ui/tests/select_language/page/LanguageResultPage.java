@@ -1,4 +1,4 @@
-package by.st.tests.select_language.page;
+package by.st.tests.ui.tests.select_language.page;
 
 import io.qameta.allure.Step;
 

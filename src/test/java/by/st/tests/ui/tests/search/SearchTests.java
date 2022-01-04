@@ -1,8 +1,8 @@
-package by.st.tests.search;
+package by.st.tests.ui.tests.search;
 
-import by.st.tests.TestBase;
-import by.st.tests.search.page.SearchPage;
-import by.st.tests.search.page.SearchResultPage;
+import by.st.tests.ui.tests.TestBase;
+import by.st.tests.ui.tests.search.page.SearchPage;
+import by.st.tests.ui.tests.search.page.SearchResultPage;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -14,7 +14,7 @@ public class SearchTests extends TestBase {
     @ValueSource(strings = {
             "банк",
             "платформа",
-            "программа"
+            "документ"
     })
     @Feature("Поиск")
     @ParameterizedTest(name = "Проверка результатов поиска: {0}")

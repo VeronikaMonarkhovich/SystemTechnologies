@@ -1,6 +1,6 @@
-package by.st.tests.select_language.page;
+package by.st.tests.ui.tests.select_language.page;
 
-import by.st.config.App;
+import by.st.tests.ui.config.App;
 import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Step;
 

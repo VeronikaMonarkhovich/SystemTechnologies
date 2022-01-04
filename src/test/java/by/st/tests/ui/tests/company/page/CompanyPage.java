@@ -1,7 +1,7 @@
-package by.st.tests.company.page;
+package by.st.tests.ui.tests.company.page;
 
 import io.qameta.allure.Step;
-import by.st.config.App;
+import by.st.tests.ui.config.App;
 
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
