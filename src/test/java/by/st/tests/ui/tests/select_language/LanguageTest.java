@@ -3,12 +3,14 @@ package by.st.tests.ui.tests.select_language;
 import by.st.tests.ui.tests.TestBase;
 import by.st.tests.ui.tests.select_language.page.LanguagePage;
 import by.st.tests.ui.tests.select_language.page.LanguageResultPage;
+import io.qameta.allure.AllureId;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class LanguageTest extends TestBase {
     @Test
+    @AllureId("6501")
     @Feature("Главная страница")
     @DisplayName("Выбор языка")
     void languageTest() {

@@ -3,6 +3,7 @@ package by.st.tests.ui.tests.search;
 import by.st.tests.ui.tests.TestBase;
 import by.st.tests.ui.tests.search.page.SearchPage;
 import by.st.tests.ui.tests.search.page.SearchResultPage;
+import io.qameta.allure.AllureId;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -18,6 +19,7 @@ public class SearchTests extends TestBase {
     })
     @Feature("Поиск")
     @ParameterizedTest(name = "Проверка результатов поиска: {0}")
+    @AllureId("6504")
     void searchTest(String searchQuery) {
         help.openMainPage();
         help.setSearch(searchQuery);
