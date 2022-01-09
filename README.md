@@ -50,7 +50,7 @@ ___
 <img src="images/ato.jpg" width="800" height="600"> 
 
 ___
-## <img src=https://github.com/VeronikaMonarkhovich/VeronikaMonarkhovich/blob/master/logo/Java.png width="20" height="20"> Задача в таск-трекере Jira с данными, экспортированными из Allure TestOps
+## <img src=https://github.com/VeronikaMonarkhovich/VeronikaMonarkhovich/blob/master/logo/Jira.png width="20" height="20"> Задача в таск-трекере Jira с данными, экспортированными из Allure TestOps
 
 <img src="images/jira.jpg" width="800" height="600"> 
 ___
