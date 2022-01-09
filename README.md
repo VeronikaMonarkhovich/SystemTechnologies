@@ -1,6 +1,6 @@
 # <img src="images/st.jpg" width="40" height="40">  Проект для SystemTechnologies
 
-<img src="images/st.by.jpg" width="800" height="600"> 
+<img src="images/st.by.jpg" width="600" height="300"> 
 
 ## :gear: Использованы технологии:
 | Java | Gradle | Junit5 | Selenide | GitHub | Jenkins | Selenoid | Allure Report | Allure TestOps | Jira | Telegram |
