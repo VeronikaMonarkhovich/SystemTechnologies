@@ -41,4 +41,4 @@ target/
 /gradlew.bat
 
 src/test/resources/config/config.properties
-/images/
+
