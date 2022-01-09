@@ -21,7 +21,7 @@ src/test/resources/config/config.properties
 Text File Content:
 ```bash
 webUrl=https://www.st.by
-remoteUrl = REMOTE_DRIVER_URL
+remoteUrl=REMOTE_DRIVER_URL
 ```
 Запуск тестов:
 - в параметре DvideoStorage указываем место для сохранения видео
