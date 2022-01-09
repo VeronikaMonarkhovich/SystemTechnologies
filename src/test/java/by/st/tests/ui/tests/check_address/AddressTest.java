@@ -9,7 +9,6 @@ import org.junit.jupiter.api.Test;
 
 public class AddressTest extends TestBase {
     @Test
-
     @AllureId("6502")
     @Feature("Главная страница")
     @DisplayName("Проверка адреса")

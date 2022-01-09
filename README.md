@@ -11,7 +11,7 @@ ___
 
 ## :person_in_tuxedo: Запуск тестов происходит в CI [Jenkins](http://localhost:9090/job/08-Veronika_Monarkhovich-8_SystemTechnologies/)
 
-<img src="images/jenkins.jpg" width="800" height="600"> 
+<img src="images/jenkins.jpg" width="600" height="300"> 
 
 Создаем config.properties:
 
@@ -41,26 +41,26 @@ ___
 
 ## :bar_chart: Отчет генерируется в Allure
 
-<img src="images/all.jpg" width="800" height="600">
+<img src="images/all.jpg" width="600" height="300">
 
 ___
 
 ## <img src="images/ato1.jpg" width="20" height="20"> Тестовая документация, сгенерированная в Allure TestOps по итогам прохождения тестов
 
-<img src="images/ato.jpg" width="800" height="600"> 
+<img src="images/ato.jpg" width="600" height="300"> 
 
 ___
 ## <img src=https://github.com/VeronikaMonarkhovich/VeronikaMonarkhovich/blob/master/logo/Jira.png width="20" height="20"> Задача в таск-трекере Jira с данными, экспортированными из Allure TestOps
 
-<img src="images/jira.jpg" width="800" height="600"> 
+<img src="images/jira.jpg" width="600" height="300"> 
 ___
 
 ## :calling: Уведомления о прохождение тестов отправляются в Telegram
 
-<img src="images/telegram.jpg" width="600" height="800"> 
+<img src="images/telegram.jpg" width="300" height="600"> 
 
 ___
 
 ## :movie_camera: Видеотчет теста "Проверка 'Связаться с нами'"
 
-<img src="images/Connect.gif" width="1000" height="600"> 
+<img src="images/Connect.gif" width="600" height="300"> 
