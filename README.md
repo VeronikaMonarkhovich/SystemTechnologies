@@ -57,7 +57,7 @@ ___
 
 ## :calling: Уведомления о прохождение тестов отправляются в Telegram
 
-<img src="images/telegram.jpg" width="800" height="400"> 
+<img src="images/telegram.jpg" width="600" height="800"> 
 
 ___
 
