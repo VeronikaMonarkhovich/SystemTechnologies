@@ -9,14 +9,14 @@
 
 ___
 
-## :person_in_tuxedo: Запуск тестов происходит в CI [Jenkins](https://jenkins.autotests.cloud/job/08-Veronika_Monarkhovich-System_technologies/)
+## :person_in_tuxedo: Запуск тестов происходит в CI [Jenkins](http://localhost:9090/job/08-Veronika_Monarkhovich-8_SystemTechnologies/)
 
 <img src="images/jenkins.jpg" width="800" height="600"> 
 
 Создаем config.properties:
 
 ```bash
-./src/test/resources/config/config.properties
+src/test/resources/config/config.properties
 ```
 Text File Content:
 ```bash
@@ -24,11 +24,10 @@ webUrl=https://www.st.by
 remoteUrl = REMOTE_DRIVER_URL
 ```
 Запуск тестов:
-- в параметре DremoteDriverUrl - указываем логин, пароль и адрес удаленного сервера, где будут проходить тесты
 - в параметре DvideoStorage указываем место для сохранения видео
 - в параметре Dbrowser задаем браузер
 ```bash
-gradle clean test -Dbrowser=${BROWSER}  -DremoteDriverUrl=${REMOTE_DRIVER_URL} -DvideoStorage=https://selenoid.autotests.cloud/video/
+clean test -Dbrowser=${BROWSER} -DvideoStorage=http://localhost:8080/video/
 ```
 
 Генерация отчета:
@@ -47,8 +46,13 @@ ___
 ___
 
 ## <img src="images/ato1.jpg" width="20" height="20"> Тестовая документация, сгенерированная в Allure TestOps по итогам прохождения тестов
+
 <img src="images/ato.jpg" width="800" height="600"> 
 
+___
+## <img src=https://github.com/VeronikaMonarkhovich/VeronikaMonarkhovich/blob/master/logo/Java.png width="20" height="20"> Задача в таск-трекере Jira с данными, экспортированными из Allure TestOps
+
+<img src="images/jira.jpg" width="800" height="600"> 
 ___
 
 ## :calling: Уведомления о прохождение тестов отправляются в Telegram
