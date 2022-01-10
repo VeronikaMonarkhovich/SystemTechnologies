@@ -24,10 +24,10 @@ webUrl=https://www.st.by
 remoteUrl=http://172.17.0.1:4444/wd/hub
 ```
 Запуск тестов:
-- в параметре DvideoStorage указываем место для сохранения видео
+
 - в параметре Dbrowser задаем браузер
 ```bash
-clean test -Dbrowser=${BROWSER} -DvideoStorage=http://localhost:8080/video/
+clean test -Dbrowser=${BROWSER} 
 ```
 
 Генерация отчета:
