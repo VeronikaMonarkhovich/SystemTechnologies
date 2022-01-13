@@ -13,7 +13,7 @@ import java.nio.charset.StandardCharsets;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static org.openqa.selenium.logging.LogType.BROWSER;
 
-public class Attach {
+public class Attaches {
 
     @Attachment(value = "{attachName}", type = "text/plain")
     public static String attachAsText(String attachName, String message) {
@@ -21,16 +21,16 @@ public class Attach {
     }
 
     @Attachment(value = "Page source", type = "text/plain")
-    public static byte[] pageSource() {
+    public static byte[] addPageSource() {
         return getWebDriver().getPageSource().getBytes(StandardCharsets.UTF_8);
     }
 
     @Attachment(value = "{attachName}", type = "image/png")
-    public static byte[] screenshotAs(String attachName) {
+    public static byte[] addScreenshotAs(String attachName) {
         return ((TakesScreenshot) getWebDriver()).getScreenshotAs(OutputType.BYTES);
     }
 
-    public static void browserConsoleLogs() {
+    public static void addBrowserConsoleLogs() {
         attachAsText(
                 "Browser console logs",
                 String.join("\n", Selenide.getWebDriverLogs(BROWSER))

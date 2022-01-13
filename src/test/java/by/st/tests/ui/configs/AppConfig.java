@@ -1,4 +1,4 @@
-package by.st.tests.ui.config;
+package by.st.tests.ui.configs;
 
 import org.aeonbits.owner.Config;
 

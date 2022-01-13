@@ -1,38 +1,39 @@
 package by.st.tests.ui.tests;
 
-import by.st.tests.ui.helpers.Attach;
-import by.st.tests.ui.config.App;
+import by.st.tests.ui.helpers.Attaches;
+import by.st.tests.ui.configs.App;
 
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.WebDriverRunner;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import static com.codeborne.selenide.Selenide.open;
+
 public class TestBase {
-    @BeforeEach
-    void setup() {
+
+    @BeforeAll
+    static void setup() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--adrum=isAjax:true");
-        chromeOptions.addArguments("--user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Mobile Safari/537.36");
-        capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
 
         Configuration.browserCapabilities = capabilities;
         Configuration.remote = App.config.remoteUrl();
+        Configuration.baseUrl = App.config.webUrl();
+    }
+
+    @BeforeEach
+    public void openMainPage() {
+        open("");
     }
 
     @AfterEach
     public void tearDown() {
-        Attach.screenshotAs("Last screenshot");
-        Attach.pageSource();
-        Attach.browserConsoleLogs();
-        Attach.addVideo();
-        WebDriverRunner.getWebDriver().close();
-        WebDriverRunner.getWebDriver().quit();
+        Attaches.addScreenshotAs("Last screenshot");
+        Attaches.addPageSource();
+        Attaches.addBrowserConsoleLogs();
+        Attaches.addVideo();
     }
 }
-
