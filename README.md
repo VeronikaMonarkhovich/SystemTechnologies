@@ -41,7 +41,7 @@ ___
 
 ## :bar_chart: Отчет генерируется в Allure
 
-<img src="images/all.jpg" width="600" height="300">
+<img src="images/allure.jpg" width="600" height="300">
 
 ___
 
