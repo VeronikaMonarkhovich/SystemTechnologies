@@ -1,6 +1,6 @@
 package by.st.tests.ui.tests;
 
-import by.st.tests.ui.helpers.Attaches;
+import by.st.tests.ui.helpers.Attach;
 import by.st.tests.ui.configs.App;
 
 import com.codeborne.selenide.Configuration;
@@ -34,9 +34,9 @@ public class TestBase {
 
     @AfterEach
     public void tearDown() {
-        Attaches.addScreenshotAs("Last screenshot");
-        Attaches.addPageSource();
-        Attaches.addBrowserConsoleLogs();
-        Attaches.addVideo();
+        Attach.addScreenshotAs("Last screenshot");
+        Attach.addPageSource();
+        Attach.addBrowserConsoleLogs();
+        Attach.addVideo();
     }
 }
