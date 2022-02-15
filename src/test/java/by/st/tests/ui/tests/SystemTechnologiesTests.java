@@ -11,6 +11,8 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
+import static by.st.tests.ui.tests.pages.enums.Languages.RUSSIAN;
+
 public class SystemTechnologiesTests extends TestBase {
 
     MainPage mainPage = new MainPage();
@@ -36,7 +38,7 @@ public class SystemTechnologiesTests extends TestBase {
     @ParameterizedTest(name = "Проверка результатов поиска: {0}")
     @AllureId("6502")
     void searchTest(String searchQuery) {
-        mainPage.clickLanguage("Рус");
+        mainPage.clickLanguage(RUSSIAN.getDesc());
         mainPage.setSearch(searchQuery);
         searchResultPage.checkResults(searchQuery);
     }
@@ -46,7 +48,7 @@ public class SystemTechnologiesTests extends TestBase {
     @Feature("Меню навигации")
     @DisplayName("Проверка раздела 'Связаться с нами'")
     void connectWithUsTest() {
-        mainPage.clickLanguage("Рус");
+        mainPage.clickLanguage(RUSSIAN.getDesc());
         mainPage.clickConnectWithUs();
         connectPage.checkConnectWithUs();
     }
@@ -56,7 +58,7 @@ public class SystemTechnologiesTests extends TestBase {
     @AllureId("6503")
     @ParameterizedTest(name = "Проверка раздела меню {0}")
     void menuButtonsTests(MenuButtons menuButton) {
-        mainPage.clickLanguage("Рус");
+        mainPage.clickLanguage(RUSSIAN.getDesc());
         mainPage.clickButton(menuButton.getDesc());
         menuButtonResultPage.checkHeader(menuButton.getHeader());
     }

@@ -8,7 +8,7 @@ public enum MenuButtons {
     PARTNERS("Партнеры", "Партнеры"),
     SERVICES("Услуги", "Услуги"),
     NEWS("Новости", "Новости"),
-    CAREER("Карьера", "Работа в компании");
+    CAREER("Карьера", "Что мы предлагаем");
 
     private final String desc;
     private final String header;
